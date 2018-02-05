@@ -29,7 +29,7 @@ Following previous lessons and the generated folder structures, the executable w
 * `lib/scraper.rb` includes the class methods to scrape the main page (list) and the detailed page
 * `lib/coin.rb` is reponsible of the `coin` object defining attributes, adding attributes
 
-![](http://media.deniscodes.com/architecture.png)
+![http://media.deniscodes.com/architecture.png](http://media.deniscodes.com/architecture.png)
 
 
 # 3. Coding the CLI, scraper and the coin object
@@ -43,7 +43,20 @@ The scraper was a bit challenging, I spent a lot of time trying to scrape a spec
 
 One sure that I was not sure of is that `self.list` from the scraper class would be the one instantiating the coin class. I chose to do it here because it was just shorter and seemed like a clean way to do it. But I think that to be really strict it could have been coded on the Coin class, so that scraper stayed the "tool" to grab the data and Coin could take care of its own business.
 
-![](http://media.deniscodes.com/scraper.png)
+```
+  def self.list
+    doc = Nokogiri::HTML(open("https://coinmarketcap.com/"))
+
+    doc.search("#currencies tbody tr")[0..9].map { |coin|
+      name = coin.search(".currency-name-container").text.strip
+      mcap = coin.search(".market-cap").text.strip
+      price = coin.search(".price").text.strip
+      change = coin.search(".percent-24h").text.strip
+      url = coin.search("a").attr('href') # works only with a tag
+      CoinMarketCap::Coin.new(name, mcap, price, change, "https://coinmarketcap.com#{url}")
+    }
+  end
+```
 
 # 5. Building and pushing the gem
 To build the gem I had to first create an account on https://rubygems.com/, then use the command `rake build` to build the gem and `rake release` to push it to the repertory. `rake build` is actually a very useful script as it will also tag the and push to git. 
