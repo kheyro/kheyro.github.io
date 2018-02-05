@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Data Gem Project"
-date:       2018-02-05 10:44:32 +0000
+date:       2018-02-05 05:44:33 -0500
 permalink:  cli_data_gem_project
 ---
 
@@ -29,6 +29,8 @@ Following previous lessons and the generated folder structures, the executable w
 * `lib/scraper.rb` includes the class methods to scrape the main page (list) and the detailed page
 * `lib/coin.rb` is reponsible of the `coin` object defining attributes, adding attributes
 
+![](http://media.deniscodes.com/architecture.png)
+
 
 # 3. Coding the CLI, scraper and the coin object
 1. Starting by the CLI was for me the logical step to start from, as it would flow back to the lowest level object and give us all the information and data needed from the object.
@@ -41,6 +43,7 @@ The scraper was a bit challenging, I spent a lot of time trying to scrape a spec
 
 One sure that I was not sure of is that `self.list` from the scraper class would be the one instantiating the coin class. I chose to do it here because it was just shorter and seemed like a clean way to do it. But I think that to be really strict it could have been coded on the Coin class, so that scraper stayed the "tool" to grab the data and Coin could take care of its own business.
 
+![](http://media.deniscodes.com/scraper.png)
 
 # 5. Building and pushing the gem
 To build the gem I had to first create an account on https://rubygems.com/, then use the command `rake build` to build the gem and `rake release` to push it to the repertory. `rake build` is actually a very useful script as it will also tag the and push to git. 
