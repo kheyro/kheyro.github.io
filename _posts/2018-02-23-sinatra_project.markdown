@@ -15,12 +15,13 @@ The project actually took longer than I thought, made few mistakes along the way
 
 ## The files architecture
 
+![http://media.deniscodes.com/02_sinatra/tree.png](http://media.deniscodes.com/02_sinatra/tree.png)
 
 ## The Tables
 
 There are 4 tables, I didn't create an "unit" table as I thought it was not necessary, same for "role":
 
-Pictures
+![http://media.deniscodes.com/02_sinatra/tables.png](http://media.deniscodes.com/02_sinatra/tables.png)
 
 
 ### Relationship between tables 
@@ -41,6 +42,7 @@ Pictures
 ## The Routes
 Routes are sumed up in the table below
 
+![http://media.deniscodes.com/02_sinatra/routes.png](http://media.deniscodes.com/02_sinatra/routes.png)
 
 ## Tought on the project
 
