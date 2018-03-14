@@ -7,7 +7,7 @@ permalink:  rails_project_cryptofolio
 
 ## Description
 
-Cryptofolio is an app that let you create an manage multiple crypto portfolio. It was not too complicated to code, but I had I had to go through the course again to get a reminder of some notion that came ealier in the Rails section. User can login with facebook or just sign up through a common form. All the coin are loaded and saved in the database through an API made available from [coinmarketcap](http://coinmarketcap.com) website (thanks guys!). The admin user is loaded from the seed file and it has access to the list of coin, and can click on a button to refresh the list of coins. It was pretty fun to code it.
+Cryptofolio is an app that let you create an manage multiple crypto portfolio. It was not too complicated to code, but I had I had to go through the course again to get a reminder of some notion that came ealier in the Rails section. User can login with facebook or just sign up through a common form. All the coin are loaded and saved in the database through an API made available from [coinmarketcap](http://coinmarketcap.com) website (thanks guys!). The admin user is loaded from the seed file and it has access to the list of coin, and can click on a button to refresh the list of coins. It was actually a big project, didn't expect to add that many features, but I can't help it... It was pretty fun to code it. 
 
 
 ## Tables
@@ -47,4 +47,4 @@ I added bootstrap 4 to style my app faster, and httparty was used to parse and c
 
 ## Conclusion
 
-I am very satisfied of the app, lot of features can be added so that it would be much nicer to use, such as nice charts, importing data from wallet, etc... Rails is very comfortable to work with, but the documentation is sometimes a little confusing. Rails, sinatra, activerecord, version of ruby etc...
+I am very satisfied of the app, lot of features can be added so that it would be much nicer to use, such as nice charts, importing data from wallet, etc... Rails is very comfortable to work with, but the documentation is sometimes a little confusing. Rails, sinatra, activerecord, version of ruby etc... Really enjoyed it, and I might continue in my free time. 
