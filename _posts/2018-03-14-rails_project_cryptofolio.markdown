@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails project: Cryptofolio"
-date:       2018-03-14 14:21:08 +0000
+date:       2018-03-14 10:21:09 -0400
 permalink:  rails_project_cryptofolio
 ---
 
@@ -11,6 +11,8 @@ Cryptofolio is an app that let you create an manage multiple crypto portfolio. I
 
 
 ## Tables
+
+![http://media.deniscodes.com/03_rails/tables.png](http://media.deniscodes.com/03_rails/tables.png)
 
 The app has 4 tables:
 * Portfolios
@@ -29,9 +31,11 @@ Relationship
 I made some sketches of the way the app should look (it is not complete):
 
 
+![http://media.deniscodes.com/03_rails/design.png](http://media.deniscodes.com/03_rails/design.png)
+
 ## Gems
 
-I added bootstrap 4, to style my app faster, and httparty use to parse and call the API provided by coinmarketcap.
+I added bootstrap 4 to style my app faster, and httparty was used to parse and call the API provided by coinmarketcap.
 
 
 ## Main issues
