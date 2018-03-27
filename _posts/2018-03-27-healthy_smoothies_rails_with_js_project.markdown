@@ -99,6 +99,4 @@ $(document).on('turbolinks:load', ready);
 
 ## Conclusion
 
-This was an very interesting and fun project to work on. It definitely took more time than expected. It always ended in a mess with JQuery, it is definitely a very (maybe too) flexible language, but always fun to play with. Working in two different stacks with Ajax is also always very challenging when it comes to debugging in the right stack or at the right place. To conclude, AMS is a powerful tool to JSON, but when it comes to customizing it the right way, it takes a lot of reading and effort.# Enter your title here
-
-The content of your blog post goes here.
+This was an very interesting and fun project to work on. It definitely took more time than expected. It always ended in a mess with JQuery, it is definitely a very (maybe too) flexible language, but always fun to play with. Working in two different stacks with Ajax is also always very challenging when it comes to debugging in the right stack or at the right place. To conclude, AMS is a powerful tool to JSON, but when it comes to customizing it the right way, it takes a lot of reading and effort.
