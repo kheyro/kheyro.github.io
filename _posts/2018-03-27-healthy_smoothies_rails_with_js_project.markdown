@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Healthy Smoothies! Rails with JS Project"
-date:       2018-03-27 19:17:36 +0000
+date:       2018-03-27 15:17:36 -0400
 permalink:  healthy_smoothies_rails_with_js_project
 ---
 
