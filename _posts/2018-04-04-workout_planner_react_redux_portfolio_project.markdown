@@ -28,7 +28,7 @@ The app has 3 tables:
 * Workouts `belongs_to` Exercise and `belons_to` Programs
 
 
-[PIC]
+![tables](http://media.deniscodes.com/05_react_redux_rails/tables.png)
 
 
 
@@ -36,7 +36,7 @@ The app has 3 tables:
 
 Here is a simple mockup of the Program list view
 
-[PIC]
+![mockup](http://media.deniscodes.com/05_react_redux_rails/design.jpg)
 
 
 ## Gem and JS library
